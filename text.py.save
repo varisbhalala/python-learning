@@ -1,0 +1,17 @@
+
+from twilio.rest import Client
+
+# Your Account SID from twilio.com/console
+account_sid = "AC131dfc2b445cb5b9a432a74c8a823949"
+# Your Auth Token from twilio.com/console
+auth_token  = "165f9d1e767c85161ac2ce7773feffda"
+
+client = Client(account_sid, auth_token)
+
+message = client.messages.create(
+    to="+919638747240", 
+    from_="+15592061207",
+    body="Ankit please I Love You <3")
+
+print(message.sid)
+

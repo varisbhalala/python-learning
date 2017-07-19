@@ -1,0 +1,6 @@
+import os
+def rename_files():
+	file_list = os.listdir(r"/home/varis/Desktop/prank")
+	print(file_list)
+	
+rename_files()
