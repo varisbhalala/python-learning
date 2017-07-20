@@ -7,7 +7,7 @@ def read_text():
 	check(contents)
 
 def check(text):
-	with urllib.request.urlopen("http://www.purgomalum.com/service/xml?text="+text) as url:
+	with urllib.request.urlopen("http://www.wdylike.appspot.com/?q="+text) as url:
 		output = url.read()
 	print(output)
 	connection.close()
